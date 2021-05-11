@@ -24,8 +24,8 @@ function MyFunction() {
     " manufactured in " + Jamal.Vehicle_Year;
 }                                                                                // this code show us using the "new" and "this" keyword function
 
-function count_Function() {
-    document.getElementsById("Counting").innerHTML= Count();
+function CountFunction() {
+    document.getElementById("Counting").innerHTML= Count();
     function Count() {
         var Starting_point = 9;
         function Plus_one() {Starting_point += 1;}
