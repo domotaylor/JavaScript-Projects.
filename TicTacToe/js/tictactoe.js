@@ -14,7 +14,7 @@ function placeXOrO(squareNumber) {
         //This condition checks who's turn it is.
         if (activePlayer === 'X') {
             //If activePlayer is equal to 'X', the x.png is placed in HTML.
-            select.style.backgroundImage = 'url ("images/x.png")';
+            select.style.backgroundImage = 'url("images/x.png")';
             //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'            
         } else {
             //If activePlayer is equal to 'O', the o.png is placed in HTML.
@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
         }
 
         //This function plays placement sound.
-        Audio('./media/place.mp3');
+        audio('./media/place.mp3');
         //This condition checks to see if it is computers turn.
         if(activePlayer === 'O') {
             //This function disables clicking for computer choice.
@@ -106,7 +106,7 @@ function checkWinConditions() {
     // squares are selcted the code excutes.
     else if (selectedSquares.length >= 9) {
         //This function plays the tie game sound.
-        Audio('./media/tie.mp3');
+        audio('./media/tie.mp3');
         //This function sets a .3 second timer before the resetGame is called.
         setTimeout(function() { resetGame();}, 1000);
     }
