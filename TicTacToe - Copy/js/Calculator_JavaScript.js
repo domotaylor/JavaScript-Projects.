@@ -17,7 +17,7 @@ function Input_Digit(digit) {
     // Display_Value to the key that was clicked.
     if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
-        Calculator.wait_Second_Operand = false; 
+        Calculator.Wait_Second_Operand = false; 
     } else {
     // this overwrites Display_value if the current value is 0
     // otherwise it adds onto it
@@ -113,7 +113,7 @@ keys.addEventListener('click', (event) => {
     if (target.classList.contains('decimal')) {
         Input_Decimal(target.value);
         Update_Display();
-        return;
+          return;
     }
     // ensures the AC clears the number from the Calculator
     if (target.classList.contains('all-clear')) {
