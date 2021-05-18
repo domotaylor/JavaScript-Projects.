@@ -33,113 +33,132 @@
 		
 		<!--GALLERY-->
 		<section id="gallery">
+			<div class="row">
 			<div class="container">
 				<h1>GALLERY</h1>
 				<div class="flex-container">
 				
 					<!--PHOTO-CONTAINER1-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_new 1.jpg" alt="">
+							<img src="./images/thumb/animeresort_new 1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Enjoy your stay with some of your favorite hero from around the anime world!</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER2-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_2.jpg" alt="">
+							<img src="./images/thumb/animeresort_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have cool anime theme bedrooms, waterparks, and restuarants</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER3-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_3.jpg" alt="">
+							<img src="./images/thumb/animeresort_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Bedrooms with many of your favorite anime characters</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER4-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src= "./images/thumb/animeresort_4.jpg" alt="">
+							<img src= "./images/thumb/animeresort_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have anime themed living room options too</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER5-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_5.jpg" alt="">
+							<img src="./images/thumb/animeresort_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
 							<div class="photo-overlay"
 								<h3>Click to Enlarge</h3>
 								<p>characters ranging from superheros and anime warriors</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER6-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_6.jpg" alt="">
+							<img src="./images/thumb/animeresort_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Your experience will be an episode of One Piece</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER7-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_7.jpg" alt="">
+							<img src="./images/thumb/animeresort_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Even something for the mini anime fans</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER8-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_8.jpg" alt="">
+							<img src="./images/thumb/animeresort_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>amazing anime theme water park</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER-->
 					
 					<!--PHOTO-CONTAINER9-->
+					<div class="column">
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/animeresort_9.jpg" alt="">
+							<img src="./images/thumb/animeresort_9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>Then feed your face with your favorite characters too</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -147,12 +166,12 @@
 
 					<!-- The Modal/Lightbox -->
 					<div id="myModal" class="modal">
-						<span class="vlose cursor" onclick="closeModal()">&times;</span>
+						<span class="close cursor" onclick="closeModal()">&times;</span>
 						<div class="modal-content">
 
 							<div class="mySlides">
 								<div class="numbertext">1 / 9</div>
-								<img src="images/thumb/animeresort_1.jpg" style="width: 100%">
+								<img src="images/thumb/animeresort_new 1.jpg" style="width: 100%">
 							</div>
 
 							<div class="mySlides">
@@ -206,7 +225,7 @@
 
 							<!-- Thumbnail image controls -->
 							<div class="column">
-								<img class="demo" src="images/thumb/animeresort_1.jpg" onclick="currentSlide(1)"
+								<img class="demo" src="images/thumb/animeresort_new 1.jpg" onclick="currentSlide(1)"
 						alt="Resort">
 							</div>
 
@@ -252,6 +271,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</section>
 		 <!-- END GALLERY -->
 		 
