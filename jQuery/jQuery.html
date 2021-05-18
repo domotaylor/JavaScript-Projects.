@@ -11,15 +11,21 @@
                 <div id='container'>\
                     <div id='inner'>\
                         <h1>Basic jQuery</h1>\
-                        <p>Paragraph 1</p>\
-                        <p>Paragraph 2</p>\
-                        <p>Paragraph 3</p>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
                     </div>\
                 </div>\
             </body>"
-        };
-
+        );
+        $("#2").css({"color": "red"});      //this changes the color of the 2nd paragraph
+        $("#3").click(function() {                  
+            $('h1').hide();                 //this makes the h1 disappear once you click on the 3rd paragraph
+        });
     });
 
+    
+    
+    
     </script>
 </html>
